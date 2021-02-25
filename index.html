@@ -21,7 +21,7 @@
   <div class="carton">
     <div class="front">
       <p class="missing">MISSING</p>
-      <div class="cat">
+      <div class="cat" onclick="playAudio('where.mp3')">
 
       </div>
       <p class="info">If you see this person, call immediately!</p>
@@ -31,5 +31,11 @@
   </div>
 
 </body>  
+
+<script type="text/javascript">
+  function playAudio(url) {
+    new Audio(url).play();
+  }
+</script>
 
 </html>
